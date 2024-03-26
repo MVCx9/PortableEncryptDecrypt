@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -41,73 +39,58 @@ public class EncryptDecryptGUI {
         selectPublicKeyButton = new JButton("Seleccionar clave pública (.pem)");
         selectPrivateKeyButton = new JButton("Seleccionar clave privada (.p12)");
 
-        selectPublicKeyButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFileChooser fileChooser = new JFileChooser();
-                int returnValue = fileChooser.showOpenDialog(null);
-                if (returnValue == JFileChooser.APPROVE_OPTION) {
-                    publicKeyFile = fileChooser.getSelectedFile();
-                    try {
-						publicKey = EncryptDecryptFunction.getPublicKey(publicKeyFile.getPath());
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
+        selectPublicKeyButton.addActionListener(e -> {
+            JFileChooser fileChooser = new JFileChooser();
+            int returnValue = fileChooser.showOpenDialog(null);
+            if (returnValue == JFileChooser.APPROVE_OPTION) {
+                publicKeyFile = fileChooser.getSelectedFile();
+                try {
+                    publicKey = EncryptDecryptFunction.getPublicKey(publicKeyFile.getPath());
+                } catch (Exception e1) {
+                    e1.printStackTrace();
                 }
             }
         });
 
-        selectPrivateKeyButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFileChooser fileChooser = new JFileChooser();
-                int returnValue = fileChooser.showOpenDialog(null);
-                if (returnValue == JFileChooser.APPROVE_OPTION) {
-                    privateKeyFile = fileChooser.getSelectedFile();
-                    try {
-						privateKey = EncryptDecryptFunction.getPrivateKey(privateKeyFile.getPath(), new String(passwordField.getPassword()));
-					} catch (Exception e1) {
-						e1.printStackTrace();
-					}
+        selectPrivateKeyButton.addActionListener(e -> {
+            JFileChooser fileChooser = new JFileChooser();
+            int returnValue = fileChooser.showOpenDialog(null);
+            if (returnValue == JFileChooser.APPROVE_OPTION) {
+                privateKeyFile = fileChooser.getSelectedFile();
+                try {
+                    privateKey = EncryptDecryptFunction.getPrivateKey(privateKeyFile.getPath(), new String(passwordField.getPassword()));
+                } catch (Exception e1) {
+                    e1.printStackTrace();
                 }
             }
         });
 
-        encryptButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String message = messageArea.getText();
-				try {
-					encryptedMessage = EncryptDecryptFunction.encrypt(message, publicKey);
-					encryptResultArea.setText(Base64.getEncoder().encodeToString(encryptedMessage));
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
+        encryptButton.addActionListener(e -> {
+            String message = messageArea.getText();
+            try {
+                encryptedMessage = EncryptDecryptFunction.encrypt(message, publicKey);
+                encryptResultArea.setText(Base64.getEncoder().encodeToString(encryptedMessage));
+            } catch (Exception e1) {
+                e1.printStackTrace();
             }
         });
 
-        decryptButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-				try {
-					decryptedMessage = EncryptDecryptFunction.decrypt(Base64.getEncoder().encodeToString(encryptedMessage), privateKey);
-					decryptResultArea.setText(decryptedMessage);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
+        decryptButton.addActionListener(e -> {
+            try {
+                decryptedMessage = EncryptDecryptFunction.decrypt(Base64.getEncoder().encodeToString(encryptedMessage), privateKey);
+                decryptResultArea.setText(decryptedMessage);
+            } catch (Exception e1) {
+                e1.printStackTrace();
             }
         });
         
-        manualDecryptButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-				try {
-					manualDecryptedMessage = EncryptDecryptFunction.decrypt(
-							manualEncryptResultArea.getText(), privateKey);
-					manualDecryptResultArea.setText(manualDecryptedMessage);
-				} catch (Exception e1) {
-					e1.printStackTrace();
-				}
+        manualDecryptButton.addActionListener(e -> {
+            try {
+                manualDecryptedMessage = EncryptDecryptFunction.decrypt(
+                        manualEncryptResultArea.getText(), privateKey);
+                manualDecryptResultArea.setText(manualDecryptedMessage);
+            } catch (Exception e1) {
+                e1.printStackTrace();
             }
         });
     }
