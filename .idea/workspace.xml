@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58a95b59-2273-436a-924a-6be36907c3ce" name="Changes" comment="idea files" />
+    <list default="true" id="58a95b59-2273-436a-924a-6be36907c3ce" name="Changes" comment="- use lambda instead of declared functions" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "settings.build.tools.auto.reload": "ALL",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
@@ -77,12 +77,45 @@
       <option name="project" value="LOCAL" />
       <updated>1711470853833</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="idea files">
+      <option name="closed" value="true" />
+      <created>1711470884300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711470884300</updated>
+    </task>
+    <task id="LOCAL-00004" summary="idea files">
+      <option name="closed" value="true" />
+      <created>1711470944112</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711470944112</updated>
+    </task>
+    <task id="LOCAL-00005" summary="idea files">
+      <option name="closed" value="true" />
+      <created>1711470948172</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711470948172</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- use lambda instead of declared functions">
+      <option name="closed" value="true" />
+      <created>1711471183490</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711471183490</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Encrypt and decrypt messages application with RSA algorithm using public key storage in .pem file (certificate) and private key storage in .p12 file (protected with password)" />
     <MESSAGE value="idea files" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea files" />
+    <MESSAGE value="- use lambda instead of declared functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="- use lambda instead of declared functions" />
   </component>
 </project>
