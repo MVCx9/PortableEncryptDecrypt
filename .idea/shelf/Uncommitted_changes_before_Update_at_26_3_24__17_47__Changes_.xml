@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_26_3_24,_17_47_[Changes]" date="1711471664641" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_3_24,_17_47_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 26/3/24, 17:47 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/2/3/23dc2c41893a248c5c80f27f23442accede0746f" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/2/3/23dc2c41893a248c5c80f27f23442accede0746f" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_3_24,_17_47_[Changes]/23dc2c41893a248c5c80f27f23442accede0746f" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/index.pb" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/index.pb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_3_24,_17_47_[Changes]/index.pb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/sonarlint/issuestore/3/3/33cd9d1b69e1a26f58c71a1d6dbad8d3a314da12" />
+    <option name="AFTER_PATH" value=".idea/sonarlint/issuestore/3/3/33cd9d1b69e1a26f58c71a1d6dbad8d3a314da12" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_3_24,_17_47_[Changes]/33cd9d1b69e1a26f58c71a1d6dbad8d3a314da12" />
+  </binary>
+</changelist>

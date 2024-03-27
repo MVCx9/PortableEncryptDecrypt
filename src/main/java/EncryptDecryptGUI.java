@@ -47,7 +47,7 @@ public class EncryptDecryptGUI {
                 try {
                     publicKey = EncryptDecryptFunction.getPublicKey(publicKeyFile.getPath());
                 } catch (Exception e1) {
-                    e1.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Ha ocurrido un error al obtener la clave pública: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
@@ -60,7 +60,7 @@ public class EncryptDecryptGUI {
                 try {
                     privateKey = EncryptDecryptFunction.getPrivateKey(privateKeyFile.getPath(), new String(passwordField.getPassword()));
                 } catch (Exception e1) {
-                    e1.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Ha ocurrido un error al obtener la clave privada: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
@@ -71,7 +71,7 @@ public class EncryptDecryptGUI {
                 encryptedMessage = EncryptDecryptFunction.encrypt(message, publicKey);
                 encryptResultArea.setText(Base64.getEncoder().encodeToString(encryptedMessage));
             } catch (Exception e1) {
-                e1.printStackTrace();
+                JOptionPane.showMessageDialog(null, "Ha ocurrido un error durante la encriptación: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
 
@@ -80,7 +80,7 @@ public class EncryptDecryptGUI {
                 decryptedMessage = EncryptDecryptFunction.decrypt(Base64.getEncoder().encodeToString(encryptedMessage), privateKey);
                 decryptResultArea.setText(decryptedMessage);
             } catch (Exception e1) {
-                e1.printStackTrace();
+                JOptionPane.showMessageDialog(null, "Ha ocurrido un error durante la desencriptación: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
         
@@ -90,8 +90,7 @@ public class EncryptDecryptGUI {
                         manualEncryptResultArea.getText(), privateKey);
                 manualDecryptResultArea.setText(manualDecryptedMessage);
             } catch (Exception e1) {
-                e1.printStackTrace();
-            }
+                JOptionPane.showMessageDialog(null, "Ha ocurrido un error durante la desencriptación manual: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);            }
         });
     }
 
