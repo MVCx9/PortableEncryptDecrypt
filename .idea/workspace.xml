@@ -1,167 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58a95b59-2273-436a-924a-6be36907c3ce" name="Changes" comment="idea files">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23dc2c41893a248c5c80f27f23442accede0746f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23dc2c41893a248c5c80f27f23442accede0746f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33cd9d1b69e1a26f58c71a1d6dbad8d3a314da12" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33cd9d1b69e1a26f58c71a1d6dbad8d3a314da12" afterDir="false" />
+    <list default="true" id="f466609f-d2bd-455b-9fa1-2f557c9d3b85" name="Changes" comment="- add new button to fast-copy encripted message">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EncryptDecryptGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EncryptDecryptGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="OPTIONS">
-      <set>
-        <option value="REBASE" />
-      </set>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2eEUipf03dRqOJVNE2iweGyUwp6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.EncryptDecryptGUI.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;
-    ]
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main" />
-    </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-13.0.14-azul-13.0.14-4caba194b151-35a031be" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="58a95b59-2273-436a-924a-6be36907c3ce" name="Changes" comment="" />
-      <created>1711469360655</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1711469360655</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Encrypt and decrypt messages application with RSA algorithm using public key storage in .pem file (certificate) and private key storage in .p12 file (protected with password)">
-      <option name="closed" value="true" />
-      <created>1711470767043</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1711470767043</updated>
-    </task>
-    <task id="LOCAL-00002" summary="idea files">
-      <option name="closed" value="true" />
-      <created>1711470853833</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1711470853833</updated>
-    </task>
-    <task id="LOCAL-00003" summary="idea files">
-      <option name="closed" value="true" />
-      <created>1711470884300</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1711470884300</updated>
-    </task>
-    <task id="LOCAL-00004" summary="idea files">
-      <option name="closed" value="true" />
-      <created>1711470944112</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1711470944112</updated>
-    </task>
-    <task id="LOCAL-00005" summary="idea files">
-      <option name="closed" value="true" />
-      <created>1711470948172</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1711470948172</updated>
-    </task>
-    <task id="LOCAL-00006" summary="- use lambda instead of declared functions">
-      <option name="closed" value="true" />
-      <created>1711471183490</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1711471183490</updated>
-    </task>
-    <task id="LOCAL-00007" summary="idea files">
-      <option name="closed" value="true" />
-      <created>1711471233309</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1711471233310</updated>
-    </task>
-    <task id="LOCAL-00008" summary="idea files">
-      <option name="closed" value="true" />
-      <created>1711471689533</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1711471689533</updated>
-    </task>
-    <task id="LOCAL-00009" summary="idea files">
-      <option name="closed" value="true" />
-      <created>1711471694092</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1711471694092</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Encrypt and decrypt messages application with RSA algorithm using public key storage in .pem file (certificate) and private key storage in .p12 file (protected with password)" />
-    <MESSAGE value="- use lambda instead of declared functions" />
-    <MESSAGE value="idea files" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea files" />
+    <MESSAGE value="- add new button to fast-copy encripted message" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add new button to fast-copy encripted message" />
   </component>
 </project>
