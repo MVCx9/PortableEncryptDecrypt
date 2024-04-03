@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.io.File;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -17,6 +19,7 @@ public class EncryptDecryptGUI {
     private final JPasswordField passwordField;
     private final JButton selectPublicKeyButton;
     private final JButton selectPrivateKeyButton;
+    private final JButton copyEncryptedText;
     private File publicKeyFile;
     private File privateKeyFile;
     private PublicKey publicKey;
@@ -29,6 +32,7 @@ public class EncryptDecryptGUI {
     public EncryptDecryptGUI() {
         encryptButton = new JButton("Encriptar");
         decryptButton = new JButton("Desencriptar");
+        copyEncryptedText = new JButton("Copiar texto encriptado");
         manualDecryptButton  = new JButton("Desencriptar manual");
         messageArea = new JTextArea(2, 10);
         encryptResultArea = new JTextArea(2, 20);
@@ -38,6 +42,7 @@ public class EncryptDecryptGUI {
         passwordField = new JPasswordField(20);
         selectPublicKeyButton = new JButton("Seleccionar clave pública (.pem)");
         selectPrivateKeyButton = new JButton("Seleccionar clave privada (.p12)");
+
 
         selectPublicKeyButton.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
@@ -83,6 +88,16 @@ public class EncryptDecryptGUI {
                 JOptionPane.showMessageDialog(null, "Ha ocurrido un error durante la desencriptación: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
+
+        copyEncryptedText.addActionListener(e -> {
+            try {
+                StringSelection stringSelection = new StringSelection(encryptResultArea.getText());
+                Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+                clipboard.setContents(stringSelection, null);
+            } catch (Exception e1) {
+                JOptionPane.showMessageDialog(null, "Ha ocurrido un error al copiar al portapapeles el texto: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        });
         
         manualDecryptButton.addActionListener(e -> {
             try {
@@ -108,6 +123,7 @@ public class EncryptDecryptGUI {
         panel.add(rsaGUI.encryptButton);
         panel.add(new JLabel("Texto encriptado:"));
         panel.add(new JScrollPane(rsaGUI.encryptResultArea));
+        panel.add(rsaGUI.copyEncryptedText);
         panel.add(rsaGUI.decryptButton);
         panel.add(new JLabel("Texto desencriptado:"));
         panel.add(new JScrollPane(rsaGUI.decryptResultArea));
